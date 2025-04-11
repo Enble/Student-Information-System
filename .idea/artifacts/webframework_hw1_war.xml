@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="webframework-hw1:war">
+    <output-path>$PROJECT_DIR$/out/artifacts/webframework_hw1_war</output-path>
+    <root id="archive" name="webframework-hw1_war.war">
+      <element id="artifact" artifact-name="webframework-hw1:war exploded" />
+    </root>
+  </artifact>
+</component>
