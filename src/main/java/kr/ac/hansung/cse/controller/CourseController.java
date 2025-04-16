@@ -74,7 +74,7 @@ public class CourseController {
     @GetMapping("/my-registrations")
     public String myRegistrations(Model model) {
         // 2025년 2학기 수강신청 내역 가져오기
-        List<Course> registeredCourses = courseService.getRegisteredCourses(2025, 2);
+        List<Course> registeredCourses = courseService.getSemesterCourses(2025, 2);
         model.addAttribute("registeredCourses", registeredCourses);
 
         return "my-registrations";

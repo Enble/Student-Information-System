@@ -18,10 +18,6 @@ public class CourseDao {
         em.persist(course);
     }
 
-    public Course findById(int id) {
-        return em.find(Course.class, id);
-    }
-
     public List<Course> findAll() {
         return em.createQuery("SELECT c FROM Course c", Course.class)
                 .getResultList();
